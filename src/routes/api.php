@@ -5,7 +5,7 @@ $app->add(new \Slim\Middleware\JwtAuthentication([
     "rules" => [
         new \Slim\Middleware\JwtAuthentication\RequestPathRule([
             "path" => "/api/v2",
-            "passthrough" => ["/api/v1", "/ventsell-image-preprocessor"],
+            "passthrough" => ["/api/v1", "/appraisal-image-preprocessor"],
         ]),
     ],
 ]));

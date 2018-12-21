@@ -61,7 +61,7 @@ $app->group('/api/v1/auth', function () use ($app) {
                 // Send Mail
                 $name = $user['name'];
                 $email = $user['email'];
-                $subject = 'Your Ventsell ID was just used to sign in to Ventsell';
+                $subject = 'Your Appraisal ID was just used to sign in to Appraisal';
                 require 'src/libs/mails/login.php';
 
                 return $this->response->withJson($user);

@@ -5,7 +5,7 @@ RewriteRule ^ index.php [QSA,L]
 
 RewriteRule .* - [env=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 <IfModule mod_headers.c>
-    SetEnvIf Origin "http(s)?://(www\.)?(ventsell.com|sub.ventsell.com)$" AccessControlAllowOrigin=$0$1
+    SetEnvIf Origin "http(s)?://(www\.)?(webworkerme.com|appraisal.webworkerme.com)$" AccessControlAllowOrigin=$0$1
     Header add Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
     Header set Access-Control-Allow-Credentials true
 	Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type"

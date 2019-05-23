@@ -1,6 +1,0 @@
-aws rds generate-db-auth-token --hostname aarm4gwirek2yc.cfklfzizd1ma.us-west-2.rds.amazonaws.com --port 3306 --region us-west-2a --username ventsellProg
-
-mysql --host=aarm4gwirek2yc.cfklfzizd1ma.us-west-2.rds.amazonaws.com --port=3306 --user=ventsellProg --password=lnBQhPDqRMWLVRks
-
-
-
